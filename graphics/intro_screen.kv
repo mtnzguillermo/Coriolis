@@ -1,0 +1,14 @@
+#:kivy 2.3.1
+
+<IntroScreen>:
+    name: "intro"
+    
+    BoxLayout:
+        orientation: "vertical"
+
+        Label:
+            text: "Intro screen"
+
+        Button:
+            text: "Go to game screen"
+            on_release: app.root.current = "game"
